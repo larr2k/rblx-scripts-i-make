@@ -1,0 +1,20 @@
+_G.Inf = true
+
+local CurrentPlayer = game.Players:WaitForChild(PlrToChange)
+local Plrstats = CurrentPlayer:WaitForChild("PlayerValues")
+local plrchar = CurrentPlayer.Character or CurrentPlayer.CharacterAdded:wait()
+local Humanoid = plrchar:WaitForChild("Humanoid")
+
+while _G.Inf == true do
+    Event.OnServerEvent:Connect(function(player,Health,PlrToChange)
+        
+        if Health == "inf" then
+            Humanoid.MaxHealth = math.huge
+            Humanoid.Health = math.huge
+    
+        else
+            
+        end
+        
+    end)
+end
