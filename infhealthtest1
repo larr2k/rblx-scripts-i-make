@@ -1,20 +1,8 @@
-_G.Inf = true
+-- console hub by larry2k youtube.com/Larry2kYT
 
-local CurrentPlayer = game.Players:WaitForChild(PlrToChange)
-local Plrstats = CurrentPlayer:WaitForChild("PlayerValues")
-local plrchar = CurrentPlayer.Character or CurrentPlayer.CharacterAdded:wait()
-local Humanoid = plrchar:WaitForChild("Humanoid")
+_G().infhealth = true
 
-while _G.Inf == true do
-    Event.OnServerEvent:Connect(function(player,Health,PlrToChange)
-        
-        if Health == "inf" then
-            Humanoid.MaxHealth = math.huge
-            Humanoid.Health = math.huge
-    
-        else
-            
-        end
-        
-    end)
+while _G().infhealth == true do 
+    game.Players.Datonehaker.Huminoid.MaxHealth = 10000000000
+    game.Players.Datonehaker.Huminoid.Health = 10000000000
 end
