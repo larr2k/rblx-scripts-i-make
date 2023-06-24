@@ -1,8 +1,24 @@
 -- console hub by larry2k youtube.com/Larry2kYT
 
-_G().infhealth = true
+_G().InfHealth = true
+_G().JumpHeight = true
+_G().WalkSpeed = true
 
 while _G().infhealth == true do 
     game.Players.Datonehaker.Huminoid.MaxHealth = 10000000000
     game.Players.Datonehaker.Huminoid.Health = 10000000000
+    wait(1)
+    _G().InfHealth = false
+end
+
+while _G().JumpHeight == true do 
+    game.Players.Datonehaker.Huminoid.JumpHeight = 70
+    wait(1)
+    _G().JumpHeight = false
+end
+
+while _G().WalkSpeed == true do 
+    game.Players.Datonehaker.Huminoid.WalkSpeed = 100
+    wait(1)
+    _G().WalkSpeed = false
 end
